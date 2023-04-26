@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Kabonge Hajarah's Portifolio</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+<nav>
+    <img src="images/mylogo.png" alt="logo" class="mylogo">
+    <ul id="side-menu">
+<li><a href="#headerText"> Home</a></li>
+<li><a href="#About"> About</a></li>
+<li><a href="#projects"> Projects</a></li>
+<li><a href="#contact"> Contact</a></li>
+<ion-icon name="close-circle-outline" class="menubar" onclick="closemenu()"></ion-icon>
+
+    </ul>
+
+    <ion-icon name="menu-outline" class="menubar" onclick="openmenu()"></ion-icon>
+</nav>
+
+
+</div>
+      </div>
+      <div class="headerText">
+
+        <h1> Hi  <ion-icon name="happy-outline"></ion-icon>, I'm <span>Kabonge 
+            Hajarah</span> </h1>
+        <h2> A software Developer</h2>
+        </div>
+<div id="About">
+ <div class="container2">
+    <div class="row">
+       <div class="picRow">
+<img src="images/IMG_2308.jpg">
+     </div>
+      <div class="aboutRow">
+        <h1 class="sub-title">About </h1>
+<p>As a child, I was always curious about technology and the internet. I was fascinated by how all the things on the internet appeared and worked, and I spent countless hours exploring and 
+    experimenting with different 
+    technologies. As I grew older, my passion for innovation and curiosity only intensifiedleading me to pursue a career in software development.</p>
+<br>
+<p>Now, as a software developer, 
+    I bring that same curiosity and drive to every project. 
+    I am dedicated to finding creative solutions to complex problems.
+     I am constantly exploring new ideas and pushing the boundaries of what is possible,
+      always seeking to find innovative ways to improve because i believe in  life long learning
+
+    If you're looking for a talented and motivated software developer who is passionate about technology and driven to succeed, then look no further than me.
+     I would be thrilled to put my skills and experience to work.</p>
+<br>
+<button class="resume" onclick="window.location.href='https://drive.google.com/file/d/1_H7qiRRjPbq8dcaNK2Sn1FmqP-u0URBs/view?usp=sharing';">RESUME</button>
+
+        </div>
+</div> 
+
+     
+   
+</div>
+</div>
+  
+<!-- Projects -->
+        <div id="projects">
+<div class="container">
+<h1>My Projects</h1>
+<div class="workList">
+ <div class="work">
+        <img src="images/todo.webp" alt="todo">
+<br>
+        <div class="layer">
+<h3>To-do List</h3>
+<p>The application allows users to create 
+    and manage tasks, set deadlines, and mark tasks as completed. 
+    It features an intuitive user interface and is fully responsive, 
+    making it easy to use
+     on desktop and mobile devices
+     Overall, the to-do list application is a simple but powerful tool that can help individuals and teams stay organized, efficient, 
+     and on top of their tasks</p>
+     <a href="#">
+        <ion-icon name="link-outline" class="icon"></ion-icon>
+    </i></a>
+        </div>
+    </div>
+
+
+<div class="work">
+    <img src="images/bag4.jpg" alt="bag">
+    <br>
+    <div class="layer">
+        <h3>Bellah Bags</h3>
+        <p>This e-commerce website for bags allows users to browse
+             through a collection of bags, add items to their shopping cart, and checkout securely. 
+             The website is fully responsive, includes search and filter options, and provides detailed product descriptions and customer reviews.
+              It is a convenient and reliable way for users to shop 
+            for high-quality bags online.</p>
+            <a href="#">
+                <ion-icon name="link-outline" class="icon"></ion-icon>
+            </i></a>
+                </div>
+</div>
+
+<div class="work">
+    <img src="images/solar.jpg" alt="solar" >
+<br>
+    <div class="layer">
+        <h3>Solar system</h3>
+        <p>This solar system project consists of model planets that are sized and
+             positioned relative to one another based on their actual distances from the sun. The interactive model allows users to explore the relative positions of the planets and includes information about each planet. It is a fun and engaging
+             way to learn about the solar system.</p>
+            <a href="#">
+                <ion-icon name="link-outline" class="icon"></ion-icon>
+            </i></a>
+                </div>
+</div>
+</div>
+<a href="#" class="btn">See more</a>
+
+</div>
+
+</div>
+ </div>
+
+<div id="contact">
+<div class="container">
+<div class="row">
+   <div class="contact-left">
+<h1>Contact Me </h1>
+<p><ion-icon name="send-outline"></ion-icon>kabongehajarah@gmail.com</p>
+<p> <ion-icon name="call-outline"></ion-icon>+256778150769</p>
+<br>
+<div class="social-icons">
+    <a href="https://github.com/KabongeHajarah?tab=overview&from=2023-03-01&to=2023-03-31" class="github"><ion-icon name="logo-github"></ion-icon></a>
+    <a href="https://www.linkedin.com/in/kabonge-hajarah/"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
+    <a href="https://twitter.com/Shabellah3" class="twitter"><ion-icon name="logo-twitter"></ion-icon></ion-icon></a>
+    <a href="https://www.instagram.com/shabellah_ellah/" class="instagram"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+    <a href="images/Kabonge's Resume (2).pdf" download class="btn2">Download CV</a>
+</div>
+
+</div>
+<div class="contact-right"></div>
+<form name="submit-to-google-sheet">
+
+<input type="text"name="Name" placeholder="Your name" required>
+<input type="email"name="Email" placeholder="Your email" required>
+<textarea name="Message" rows="6"placeholder="Your message"></textarea>
+<button class="submit">Submit</button>
+
+
+</form>
+<span id="span"></span>
+</div>
+
+
+
+</div>
+</div>
+<div class="copyright">
+<p> Copyright @Kabonge Hajarah, Made with <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<lord-icon class="heart"
+    src="https://cdn.lordicon.com/pnhskdva.json"
+    trigger="loop"
+    delay="1000"
+    state="morph">
+</lord-icon>  </p> <br><br>
+
+</div>
+
+</div>
+
+<script>
+var sidemenu =document.getElementById("side-menu");
+function openmenu() {
+    sidemenu.style.right="0";
+}
+function closemenu() {
+    sidemenu.style.right="-200px";
+}
+
+
+
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzPsaMMIi_vHbGvIP2854C-fInzOkDGZ5bi7CIfpFM_PWTBZUmjEUWlnjsULn-h93jeVg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const span=document.getElementById("span")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+         span.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            span.innerHTML=""
+         ,5000})
+        form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
