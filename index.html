@@ -8,6 +8,8 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Kabonge Hajarah's Portifolio</title>
     <link href="styles.css" rel="stylesheet">
+    <link href="portifolio.js" rel="stylesheet">
+    <link href="mediaQuerry.css" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -47,6 +49,7 @@
     experimenting with different 
     technologies. As I grew older, my passion for innovation and curiosity only intensifiedleading me to pursue a career in software development.</p>
 <br>
+
 <p>Now, as a software developer, 
     I bring that same curiosity and drive to every project. 
     I am dedicated to finding creative solutions to complex problems.
@@ -60,12 +63,9 @@
 
         </div>
 </div> 
-
-     
-   
-</div>
-</div>
   
+</div>
+</div> 
 <!-- Projects -->
         <div id="projects">
 <div class="container">
@@ -83,12 +83,18 @@
      on desktop and mobile devices
      Overall, the to-do list application is a simple but powerful tool that can help individuals and teams stay organized, efficient, 
      and on top of their tasks</p>
-     <a href="#">
-        <ion-icon name="link-outline" class="icon"></ion-icon>
+     <a href="https://github.com/KabongeHajarah/Todo_List.git" target="_blank">
+        <ion-icon name="link-outline" class="icon">
+             Code 
+          </a>
+          </ion-icon>
     </i></a>
+    <a href="https://kabonge-todo-list.netlify.app/" target="_blank">
+        Live
+      </a>
+      
         </div>
     </div>
-
 
 <div class="work">
     <img src="images/bag4.jpg" alt="bag">
@@ -100,23 +106,26 @@
              The website is fully responsive, includes search and filter options, and provides detailed product descriptions and customer reviews.
               It is a convenient and reliable way for users to shop 
             for high-quality bags online.</p>
-            <a href="#">
+            <a href="https://github.com/KabongeHajarah/BagWebsite.git" target="_blank">
                 <ion-icon name="link-outline" class="icon"></ion-icon>
             </i></a>
+            <a href="https://kabonge-bags-ecommerce.netlify.app/index.html" target="_blank">Live
                 </div>
 </div>
 
 <div class="work">
-    <img src="images/solar.jpg" alt="solar" >
+    <img src="images/rock-paper-scissors.jpg" alt="game" >
 <br>
     <div class="layer">
-        <h3>Solar system</h3>
-        <p>This solar system project consists of model planets that are sized and
-             positioned relative to one another based on their actual distances from the sun. The interactive model allows users to explore the relative positions of the planets and includes information about each planet. It is a fun and engaging
-             way to learn about the solar system.</p>
-            <a href="#">
+        <h3>Rock Paper Scissors</h3>
+        <p> Experience the classic hand game brought to life with HTML, JavaScript, and CSS,
+             featuring both auto-play mode and interactive player versus computer gameplay.
+            The rules dictate that rock beats scissors, scissors beats paper, and paper beats rock.
+        </p>
+            <a href="https://github.com/KabongeHajarah/RockPaperScissors.git" target="blank">Code
                 <ion-icon name="link-outline" class="icon"></ion-icon>
             </i></a>
+            <a href="https://kabonge-rock-paper-scissors.netlify.app/" target="_blank">Live
                 </div>
 </div>
 </div>
@@ -173,46 +182,6 @@
 </div>
 
 </div>
-
-<script>
-var sidemenu =document.getElementById("side-menu");
-function openmenu() {
-    sidemenu.style.right="0";
-}
-function closemenu() {
-    sidemenu.style.right="-200px";
-}
-
-
-
-
-</script>
-
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzPsaMMIi_vHbGvIP2854C-fInzOkDGZ5bi7CIfpFM_PWTBZUmjEUWlnjsULn-h93jeVg/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const span=document.getElementById("span")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response =>{
-         span.innerHTML="Message sent successfully"
-        setTimeout(function(){
-            span.innerHTML=""
-         ,5000})
-        form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
-
-
-
-
-
 
 
 </body>
