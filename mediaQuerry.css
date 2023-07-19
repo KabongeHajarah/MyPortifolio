@@ -1,0 +1,88 @@
+@media (max-width:300px){
+body{
+    overflow-x: hidden;
+    margin:0px;
+    padding:0px;
+
+}
+
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/IMG_5112.JPG);
+
+    }
+    .headerText{
+        font-size:16px;
+        margin-top: 100%;
+
+    }
+    *{
+        overflow-x: hidden;
+    }
+    
+
+.headerText{
+    font-size:30px;
+}
+
+.menubar{
+    display: block;
+    font-size: 25px;
+    color: #fff;
+}
+nav ul{
+background: #8f153c6a;
+position: fixed;
+top: 0;
+right: -200px;
+width: 200px;
+height:100vh;
+padding-top:50px;
+z-index: 2;
+transition: right 0.5s;
+
+
+}
+
+nav ul li  {
+    
+    display: block;
+    margin:25px;
+} 
+nav ul .menubar{
+    position: absolute;
+  
+    top: 25px;
+    left:25px;
+    cursor: pointer;
+}
+.aboutRow{
+    font-size: 20px;
+}
+.picRow,.aboutRow{
+    flex-basis: 100%;
+
+}
+.picRow{
+    margin-bottom: 30px;
+}
+.aboutRow{
+    font-size: 14px;
+}
+.row,.workList{
+display: flex;
+flex-direction: column;
+}
+.contact-left,.contact-right{
+    flex-basis: 100%;
+}
+.copyright{
+    font-size: 14px;
+}
+}
+@media (min-width:400px){
+    *{
+        overflow-x: hidden;
+    }
+}
